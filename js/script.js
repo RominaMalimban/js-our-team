@@ -44,20 +44,30 @@ const arrayTeam = [
 
 // MILESTONE 1:
 // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
-for (let i = 0; i < arrayTeam.length; i++){
-    let memberIesimo = arrayTeam[i];
+// for (let i = 0; i < arrayTeam.length; i++){
+//     let memberIesimo = arrayTeam[i];
 
-    for(let key in memberIesimo){
-        console.log(`${key} ${memberIesimo[key]}`);
-    }
-};
+//     for(let key in memberIesimo){
+//         console.log(`${key} ${memberIesimo[key]}`);
+//     }
+// };
 
 // MILESTONE 2:
 // Stampare le stesse informazioni su DOM sottoforma di stringhe:
+let container = document.querySelector(".container");
 
+for (let i = 0; i < arrayTeam.length; i++){
+    let memberIesimo = arrayTeam[i];
 
+    let newElement = createElement();
 
+    for(let key in memberIesimo){
+        console.log(`${key} ${memberIesimo[key]}`);
 
+        newElement.append(` ${memberIesimo[key]}`);
+        container.append(newElement);
+    }
+};
 
 
 // BONUS 1:
