@@ -48,13 +48,18 @@ for (let i = 0; i < arrayTeam.length; i++){
     let memberIesimo = arrayTeam[i];
 
     for(let key in memberIesimo){
-        console.log(memberIesimo[key]);
+        console.log(`${key} ${memberIesimo[key]}`);
     }
 };
 
-
 // MILESTONE 2:
-// Stampare le stesse informazioni su DOM sottoforma di stringhe
+// Stampare le stesse informazioni su DOM sottoforma di stringhe:
+
+
+
+
+
+
 // BONUS 1:
 // Trasformare la stringa foto in una immagine effettiva
 // BONUS 2:
